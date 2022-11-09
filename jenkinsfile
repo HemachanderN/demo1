@@ -15,7 +15,7 @@ sh 'mvn test'
 post{
 always{
 junit 'target/surefire-reports/*.xml'
-archieveArtifacts 'target/*.jar'
+archiveArtifacts 'target/*.jar'
 }
 }
 }

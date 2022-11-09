@@ -4,6 +4,7 @@ stages{
 stage('Build'){
 steps{
 echo 'Build started......................'
+sh 'mvn clean install -DskipTests'
 }
 }
 stage('Test'){
